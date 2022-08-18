@@ -1,7 +1,7 @@
 package org.mowitnow.service;
 
-import org.mowitnow.classes.Lawn;
-import org.mowitnow.classes.LawnMower;
+import org.mowitnow.mower.Lawn;
+import org.mowitnow.mower.LawnMower;
 import org.mowitnow.utils.FileReader;
 
 import java.io.IOException;

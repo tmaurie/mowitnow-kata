@@ -1,4 +1,4 @@
-package org.mowitnow.classes;
+package org.mowitnow.mower;
 
 
 import org.junit.jupiter.api.Test;

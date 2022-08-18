@@ -6,12 +6,11 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class FileReader {
-    public static final String INPUT_FILE = "src/main/resources/entryFile.txt";
 
     /**
-     * Reads the file and returns the content as a char array.
+     * Reads the file and returns the content as a list of strings.
      *
-     * @return the content of the file as a char array.
+     * @return the content of the file as a List of String.
      * @throws IOException if the file cannot be read.
      */
     public static List<String> readFile(String fileName) throws IOException {

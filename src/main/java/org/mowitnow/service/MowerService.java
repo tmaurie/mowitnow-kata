@@ -8,14 +8,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.mowitnow.utils.FileReader.INPUT_FILE;
 
 public class MowerService {
 
     private final List<String> file;
 
-    public MowerService() throws IOException {
-        file = FileReader.readFile(INPUT_FILE);
+    public MowerService(String filePath) throws IOException {
+        file = FileReader.readFile(filePath);
     }
 
     public List<String> run() {

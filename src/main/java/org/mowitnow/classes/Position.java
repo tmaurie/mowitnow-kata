@@ -1,27 +1,27 @@
 package org.mowitnow.classes;
 
 public class Position {
-    private Integer xAxis;
-    private Integer yAxis;
+    private int xAxis;
+    private int yAxis;
 
-    public Position(Integer xAxis, Integer yAxis) {
+    public Position(int xAxis, int yAxis) {
         this.xAxis = xAxis;
         this.yAxis = yAxis;
     }
 
-    public Integer getxAxis() {
+    public int getxAxis() {
         return xAxis;
     }
 
-    public void setxAxis(Integer xAxis) {
+    public void setxAxis(int xAxis) {
         this.xAxis = xAxis;
     }
 
-    public Integer getyAxis() {
+    public int getyAxis() {
         return yAxis;
     }
 
-    public void setyAxis(Integer yAxis) {
+    public void setyAxis(int yAxis) {
         this.yAxis = yAxis;
     }
 

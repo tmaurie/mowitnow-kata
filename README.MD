@@ -2,6 +2,7 @@
 
 La société MowItNow a décidé de développer une tondeuse à gazon automatique,
 destinée aux surfaces rectangulaires.
+
 La tondeuse peut être programmée pour parcourir l'intégralité de la surface. La
 position de la tondeuse est représentée par une combinaison de coordonnées (x,y)
 et d'une lettre indiquant l'orientation selon la notation cardinale anglaise (N,E,W,S).
@@ -18,6 +19,7 @@ Si la position après mouvement est en dehors de la pelouse, la tondeuse ne boug
 pas, conserve son orientation et traite la commande suivante.
 On présuppose que la case directement au Nord de la position (x, y) a pour
 coordonnées (x, y+1).
+
 Pour programmer la tondeuse, on lui fournit un fichier d'entrée construit comme
 suit :
 
@@ -35,6 +37,7 @@ suit :
 Chaque tondeuse se déplace de façon séquentielle, ce qui signifie que la seconde
 tondeuse ne bouge que lorsque la première a exécuté intégralement sa série
 d'instructions.
+
 Lorsqu'une tondeuse achève une série d'instruction, elle communique sa position
 et son orientation.
 

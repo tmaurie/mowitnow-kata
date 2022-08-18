@@ -13,15 +13,16 @@ public class LawnMower {
     /**
      * Initialize the mower
      *
-     * @param lawn        the area of the lawn
+     * @param lawn the area of the lawn
      * @param coordinates position and orientation of the mower
      * @return the mower initialized
      */
     public static LawnMower initMower(Lawn lawn, String coordinates) {
-        char[] chars = coordinates.replaceAll(" ", "").toCharArray();
 
-        Position position = new Position(Integer.parseInt(String.valueOf(chars[0])), Integer.parseInt(String.valueOf(chars[1])));
-        Orientation orientation = Orientation.getOrientation(chars[2]);
+        String[] formattedCoordinates = coordinates.split(" ");
+
+        Position position = new Position(Integer.parseInt(formattedCoordinates[0]), Integer.parseInt(formattedCoordinates[1]));
+        Orientation orientation = Orientation.valueOfOrientation(formattedCoordinates[2]);
 
         return new LawnMower(position, orientation, lawn);
 

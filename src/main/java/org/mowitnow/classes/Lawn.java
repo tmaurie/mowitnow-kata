@@ -17,7 +17,10 @@ public class Lawn {
     }
 
     public boolean isValid(Position position) {
-        return position.getxAxis() >= 0 && position.getyAxis() >= 0 && position.getxAxis() <= width && position.getyAxis() <= height;
+        return position.getxAxis() >= 0
+                && position.getyAxis() >= 0
+                && position.getxAxis() <= width
+                && position.getyAxis() <= height;
     }
 
 }

@@ -4,16 +4,11 @@ package org.mowitnow.classes;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
 public class OrientationTest {
 
-    @Test
-    public void getOrientation() {
-        assertEquals(Orientation.NORTH, Orientation.getOrientation('N'));
-        assertEquals(Orientation.EAST, Orientation.getOrientation('E'));
-        assertEquals(Orientation.SOUTH, Orientation.getOrientation('S'));
-        assertEquals(Orientation.WEST, Orientation.getOrientation('W'));
-    }
+
 
     @Test
     public void getNextOrientation() {
@@ -29,5 +24,14 @@ public class OrientationTest {
         assertEquals(Orientation.NORTH, Orientation.EAST.getPreviousOrientation());
         assertEquals(Orientation.EAST, Orientation.SOUTH.getPreviousOrientation());
         assertEquals(Orientation.SOUTH, Orientation.WEST.getPreviousOrientation());
+    }
+
+    @Test
+    public void getOrientationFromChar() {
+        assertSame(Orientation.NORTH, Orientation.valueOf("NORTH"));
+        assertSame(Orientation.EAST, Orientation.valueOfOrientation("E"));
+        assertSame(Orientation.SOUTH, Orientation.valueOfOrientation("S"));
+        assertSame(Orientation.WEST, Orientation.valueOfOrientation("W"));
+
     }
 }

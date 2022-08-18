@@ -1,16 +1,22 @@
 package org.mowitnow.classes;
 
 public enum Orientation {
-    NORTH, EAST, SOUTH, WEST;
+    NORTH("N"), EAST("E"), SOUTH("S"), WEST("W");
 
-    public static Orientation getOrientation(char orientation) {
-        return switch (orientation) {
-            case 'N' -> NORTH;
-            case 'E' -> EAST;
-            case 'S' -> SOUTH;
-            case 'W' -> WEST;
-            default -> throw new IllegalStateException("Unexpected value: " + orientation);
-        };
+    public final String orientation;
+
+    Orientation(String orientation) {
+        this.orientation = orientation;
+    }
+
+
+    public static Orientation valueOfOrientation(String orientation) {
+        for (Orientation o : values()) {
+            if (o.orientation.equals(orientation)) {
+                return o;
+            }
+        }
+        return null;
     }
 
     public Orientation getNextOrientation() {

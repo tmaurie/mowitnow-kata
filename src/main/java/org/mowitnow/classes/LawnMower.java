@@ -13,7 +13,7 @@ public class LawnMower {
     /**
      * Initialize the mower
      *
-     * @param lawn the area of the lawn
+     * @param lawn        the area of the lawn
      * @param coordinates position and orientation of the mower
      * @return the mower initialized
      */
@@ -46,4 +46,7 @@ public class LawnMower {
         return position.toString() + " " + orientation.toString();
     }
 
+    public Position getPosition() {
+        return position;
+    }
 }

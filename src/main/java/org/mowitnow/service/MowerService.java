@@ -28,8 +28,9 @@ public class MowerService {
 
             char[] instructions = FileReader.parseStringIntoCharArray(file.get(i + 1));
             for (char instruction : instructions) {
-                lawnMower.move(instruction);
-
+                if (lawnMowerLawn.isValid(lawnMower.getPosition())) {
+                    lawnMower.move(instruction);
+                }
             }
             result.add(lawnMower.toString());
         }

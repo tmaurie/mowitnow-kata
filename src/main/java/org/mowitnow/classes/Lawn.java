@@ -2,17 +2,17 @@ package org.mowitnow.classes;
 
 public class Lawn {
 
-    private final Integer width;
-    private final Integer height;
+    private final int width;
+    private final int height;
 
-    public Lawn(Integer width, Integer height) {
+    public Lawn(int width, int height) {
         this.width = width;
         this.height = height;
     }
 
     public static Lawn initArea(String[] area) {
-        Integer width = Integer.parseInt(area[0]);
-        Integer height = Integer.parseInt(area[1]);
+        int width = Integer.parseInt(area[0]);
+        int height = Integer.parseInt(area[1]);
         return new Lawn(width, height);
     }
 

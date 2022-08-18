@@ -44,7 +44,7 @@ public class LawnMower {
     @Override
     // returns position and orientation as a string
     public String toString() {
-        return position.toString() + " " + orientation.toString();
+        return position.toString() + " " + orientation.getValue();
     }
 
     public Position getPosition() {

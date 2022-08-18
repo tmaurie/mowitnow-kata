@@ -36,4 +36,8 @@ public enum Orientation {
             case WEST -> SOUTH;
         };
     }
+
+    public String getValue() {
+        return orientation;
+    }
 }
